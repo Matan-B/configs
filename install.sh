@@ -9,7 +9,7 @@ sudo apt-get install vim tmux zsh exuberant-ctags
 sed -i .zshrc -e "s/yossi/$(whoami)/g"
 
 # Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Copy configs
 rsync -ahv .vimrc .zshrc ~/
@@ -17,7 +17,8 @@ rsync -ahv .vimrc .zshrc ~/
 mkdir -p $NVIM_CONFIG_DIR
 rsync -ahv .vimrc $NVIM_CONFIG_DIR/init.vim
 
-sudo rsync -ahv tmux.conf $TMUX_CONFIG_ROOT/tmux.conf
+mv tmux.conf .tmux.conf
+sudo rsync -ahv .tmux.conf $TMUX_CONFIG_ROOT/.tmux.conf
 
 # Copy vim theme
 mkdir -p ~/.vim/colors
