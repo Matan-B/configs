@@ -3,7 +3,7 @@ NVIM_CONFIG_DIR=~/.configs/nvim
 TMUX_CONFIG_ROOT=~/
 
 # Install dependencies
-sudo yum install vim tmux zsh exuberant-ctags
+sudo yum install vim tmux zsh ctags
 
 # Replace zshrc's user home folder path with the current user
 sed -i .zshrc -e "s/matan/$(whoami)/g"
