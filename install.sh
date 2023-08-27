@@ -3,10 +3,10 @@ NVIM_CONFIG_DIR=~/.configs/nvim
 TMUX_CONFIG_ROOT=~/
 
 # Install dependencies
-sudo apt-get install vim tmux zsh exuberant-ctags
+sudo yum install vim tmux zsh exuberant-ctags
 
 # Replace zshrc's user home folder path with the current user
-sed -i .zshrc -e "s/yossi/$(whoami)/g"
+sed -i .zshrc -e "s/matan/$(whoami)/g"
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

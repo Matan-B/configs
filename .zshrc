@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/yossi/.oh-my-zsh
+export ZSH=/home/matan/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,7 +58,7 @@ plugins=(git, mercurial, colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="$PATH:/home/yossi/.cargo/bin"
+export PATH="$PATH:/home/matan/.cargo/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
